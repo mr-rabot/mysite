@@ -84,11 +84,11 @@
     <div class="container mt-5" id="contact" style="max-width: 600px;">
         <h2 id="cntct">Contact Me</h2> <br>
         <div class="card p-3">
-            <form action="https://formsubmit.co/rjii.soft1122@gmail.com" method="POST">
-                <!-- Hidden fields for improved deliverability -->
+            <form id="contactForm" action="https://formsubmit.co/rjii.soft1122@gmail.com" method="POST">
+                <!-- Hidden fields -->
                 <input type="hidden" name="_next" value="https://mr-rabot.github.io/mysite/">
                 <input type="hidden" name="_subject" value="New Contact Form Submission">
-                <input type="hidden" name="_template" value="table"> 
+                <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
             
                 <div class="mb-3" style="padding: 10px;">
@@ -104,7 +104,6 @@
                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
-                <p id="form-message" style="display:none; margin-top: 10px;"></p>
             </form>
             
         </div>
