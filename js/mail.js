@@ -13,8 +13,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     if (response.ok) {
       formMessage.style.display = 'block';
       formMessage.style.color = 'green';
-      formMessage.style.fontFamily= 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif';
-      formMessage.style.fontWeight= 'bold';
+      formMessage.style.fontFamily= '"Courier New", Courier, monospace';
+      formMessage.style.fontWeight= '300';
       formMessage.style.textShadow= '0px 0px 6px rgb(0, 255, 242)';
       formMessage.textContent = 'Thank you! I will get back to you soon...';
       form.reset();
@@ -24,8 +24,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   }).catch(error => {
     formMessage.style.display = 'block';
     formMessage.style.color = 'red';
-    formMessage.style.fontFamily= 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif';
-    formMessage.style.fontWeight= 'bold';
+    formMessage.style.fontFamily= '"Courier New", Courier, monospace';
+    formMessage.style.fontWeight= '300';
     formMessage.textContent = 'Oops! There was a problem submitting your form.';
   });
 });
