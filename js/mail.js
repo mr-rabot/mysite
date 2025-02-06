@@ -14,7 +14,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         Subject: `New Contact Form Submission from ${name}`,
         Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
       }).then(
-        message => alert("Message sent successfully!"),
+        message => alert("Thank you ! I will reach you soon.."),
         error => alert("Failed to send message: " + error)
       );
   });
