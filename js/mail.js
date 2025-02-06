@@ -13,7 +13,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   fetch(form.action, {
       method: form.method,
       body: new FormData(form),
-      mode: 'no-cors'  // This bypasses CORS restrictions but limits response handling
+      mode: 'no-cors'
   }).then(() => {
       formMessage.style.display = 'block';
       formMessage.style.color = 'green';
