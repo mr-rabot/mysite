@@ -84,22 +84,28 @@
     <div class="container mt-5" id="contact" style="max-width: 600px;">
         <h2 id="cntct">Contact Me</h2> <br>
         <div class="card p-3">
-            <form id="contactForm" action="https://formsubmit.co/rjii.soft1122@gmail.com" method="POST">
+            <form action="https://formsubmit.co/rjii.soft1122@gmail.com" method="POST">
+                <!-- Hidden fields for improved deliverability -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <input type="hidden" name="_template" value="table"> 
+                <input type="hidden" name="_captcha" value="false">
+            
                 <div class="mb-3" style="padding: 10px;">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="mb-3" style="padding: 10px;">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="mb-3" style="padding: 10px;">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
                 <p id="form-message" style="display:none; margin-top: 10px;"></p>
             </form>
+            
         </div>
     </div>
 
