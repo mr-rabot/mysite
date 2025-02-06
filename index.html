@@ -84,7 +84,7 @@
     <div class="container mt-5" id="contact" style="max-width: 600px;">
         <h2 id="cntct">Contact Me</h2> <br>
         <div class="card p-3">
-            <form id="contactForm">
+            <form id="contactForm" action="https://formsubmit.co/rjii.soft1122@gmail.com" method="POST">
                 <div class="mb-3" style="padding: 10px;">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="name" required>
@@ -98,6 +98,7 @@
                     <textarea class="form-control" id="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
+                <p id="form-message" style="display:none; margin-top: 10px;"></p>
             </form>
         </div>
     </div>
@@ -119,6 +120,7 @@
         document.getElementById('contactForm').addEventListener('submit', function(event) {
           event.preventDefault();
           
+
           // Reset form after submission
           setTimeout(() => {
             document.getElementById('contactForm').reset();

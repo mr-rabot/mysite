@@ -1,20 +1,26 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+  event.preventDefault();
+  const form = event.target;
+  const formMessage = document.getElementById('form-message');
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "rjii.soft1122@gmail.com",  // Your Gmail address
-        Password: "gtiasiztzslgdgqr",  // App Password or actual password (if less secure apps enabled)
-        To: 'abrawat01@gmail.com',  // Replace with your receiving email
-        From: email,  // The sender's email from the form
-        Subject: `New Contact Form Submission from ${name}`,
-        Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
-      }).then(
-        message => alert("Thank you ! I will reach you soon.."),
-        error => alert("Failed to send message: " + error)
-      );
+  fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      formMessage.style.display = 'block';
+      formMessage.style.color = 'green';
+      formMessage.textContent = 'Thank you! I will get back to you soon...';
+      form.reset();
+    } else {
+      throw new Error('Network response was not ok.');
+    }
+  }).catch(error => {
+    formMessage.style.display = 'block';
+    formMessage.style.color = 'red';
+    formMessage.textContent = 'Oops! There was a problem submitting your form.';
   });
+});
