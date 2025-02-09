@@ -50,7 +50,6 @@ footer {
 #heading::first-letter{
   color: tomato;
   font-weight: bold;
-  text-shadow: none;
   font-size: 50px;
 }
 #abt{
