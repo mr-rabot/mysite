@@ -49,7 +49,7 @@ footer {
 }
 #heading::first-letter{
   color: tomato;
-  font-size: 30px;
+  font-size: 50px;
 }
 #abt{
     text-align: center;
