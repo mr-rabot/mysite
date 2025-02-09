@@ -147,7 +147,12 @@ footer {
 div>ul{
   list-style: disc;
 }
-#about::first-letter{
+#aboutp::first-letter{
   color: #fbff00;
+  font-size: 20px;
+}
+#spcl{
+  color: #fbff00;
+  font-weight: bold;
   font-size: 20px;
 }
