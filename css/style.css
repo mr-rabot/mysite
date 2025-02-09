@@ -149,10 +149,15 @@ div>ul{
 }
 #aboutp::first-letter{
   color: #fbff00;
+  font-weight: bold;
   font-size: 20px;
 }
 #spcl{
   color: #fbff00;
   font-weight: bold;
   font-size: 20px;
+}
+h5{
+  color: #ff7300;
+  font-weight: bold;
 }
