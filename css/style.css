@@ -135,4 +135,9 @@ footer {
     border-top: 1px solid #0dfd41;
 
   }
-  
+
+.types{
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
