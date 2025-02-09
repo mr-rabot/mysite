@@ -5,7 +5,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .navbar {
-    background-color: #1e1e1e;
+    background-color:crimson;
 }
 .profile-img {
     width: 250px;
@@ -44,7 +44,7 @@ footer {
     margin-top: 50px;
 }
 #heading {
-   text-shadow: 0px 0px 8px #00ffdd;
+   text-shadow: 0px 0px 4px #00ffdd;
    
 }
 #heading::first-letter{
@@ -142,7 +142,7 @@ footer {
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
   color: #00ffd5;
-  text-shadow: 0px 0px 3px solid salmon;
+  text-shadow: 0px 0px 4px salmon;
 }
 div>ul{
   list-style: disc;
