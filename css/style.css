@@ -47,6 +47,10 @@ footer {
    text-shadow: 0px 0px 8px #00ffdd;
    
 }
+#heading::first-letter{
+  color: tomato;
+  font-size: 30px;
+}
 #abt{
     text-align: center;
     margin-top: 50px;
