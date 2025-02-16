@@ -44,6 +44,7 @@ h2{
  h1::first-letter{
     font-weight: 800;
     color: #fc1818;
+    font-size: 30px;
  }
 
  #spcl{
