@@ -40,3 +40,14 @@ h2{
     font-weight: bold;
     
  }
+ h1::first-letter{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fc1818;
+ }
+
+ #spcl{
+    color: #fbff00;
+    font-weight: bold;
+    font-size: 20px;
+  }
