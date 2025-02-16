@@ -167,3 +167,8 @@ h5{
 #adiv{
   text-decoration: none;
 }
+
+img{
+  border: 0px 0px 7px solid crimson;
+  border-radius: 10px;
+}
