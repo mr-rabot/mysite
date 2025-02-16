@@ -21,3 +21,11 @@ function createComet() {
     comet.style.animation = `moveComet 5s linear infinite, fadeIn 0.1s linear forwards`;
     comet.style.animationDelay = `-${delay}s`; // Start at a random progress point
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+    this.removeAttribute('inert');
+}).on('hidden.bs.modal', function () {
+    this.setAttribute('inert', '');
+});
+
+
