@@ -9,7 +9,7 @@
     max-width: 90%;
     margin: auto;
     background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(1, 255, 234);
     border-radius: 15px;
 }
 p {
@@ -27,7 +27,7 @@ body{
     max-width: 600px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 8px rgb(19, 255, 243);
     margin-bottom: 15px;
 }
 ul {
