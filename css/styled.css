@@ -5,11 +5,6 @@
     text-shadow: 0px 0px 8px red;
     color: bisque;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    margin: 0;
-}
 .container {
     max-width: 90%;
     margin: auto;
