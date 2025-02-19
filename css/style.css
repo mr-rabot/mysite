@@ -174,4 +174,8 @@ img{
   
   border-radius: 10px;
 }
+.border-glow {
+  border: 2px solid #0ff; /* Cyan border */
+  box-shadow: 0 0 15px #0ff; /* Glowing effect */
+}
 
