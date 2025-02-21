@@ -199,7 +199,7 @@ img{
 
 .animated-border {
   border: 2px solid #0ff;
-  animation: glowEffect 2s infinite alternate;
+  animation: glowEffect 1.6s infinite alternate;
 }
 
 .iframe-glow {
