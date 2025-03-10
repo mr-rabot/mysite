@@ -12,7 +12,7 @@ body {
     height: 250px;
     border-radius: 50%;
     object-fit: fill;
-    border: 10px solid #00ffd5;
+    border: 3px solid #00ffd5;
     box-shadow: 0px 0px 29px #3cff00;
     animation: moveBorder 2s linear infinite, glow 1.5s linear infinite;
 }
@@ -223,6 +223,6 @@ img{
   border-right: 2px solid black;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 25px;
-  color: crimson;
+  font-size: 55px;
+  color: rgb(55, 245, 140);
 }
