@@ -23,7 +23,10 @@ function createComet() {
 }
 
 window.onload = function () {
-    const roles = ["Java Developer", "Web Developer", "Problem Solver"];
+    const roles = [
+        { text: "Java Developer", color: "cyan" },
+        { text: "Web Developer", color: "crimson" },
+        { text: "Problem Solver", color: "lime" }];
     let index = 0;
     let charIndex = 0;
     let isDeleting = false;
