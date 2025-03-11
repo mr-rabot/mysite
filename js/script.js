@@ -1,10 +1,51 @@
+const roles = [
+    { text: "Java Developer", color: "cyan" },
+    { text: "Web Developer", color: "crimson" },
+    { text: "Problem Solver", color: "lime" }
+];
+
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+const speed = 100;
+const delayBetweenWords = 1000;
+const dynamicText = document.getElementById("dynamic-text");
+
+function typeEffect() {
+    const currentRole = roles[index];
+
+    // Apply color dynamically
+    dynamicText.style.color = currentRole.color;
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    dynamicText.textContent = currentRole.text.substring(0, charIndex);
+
+    if (!isDeleting && charIndex === currentRole.text.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, delayBetweenWords);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % roles.length;
+        setTimeout(typeEffect, speed);
+    } else {
+        setTimeout(typeEffect, speed / (isDeleting ? 2 : 1));
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-    const numberOfComets = 10; // Adjust the number of comets
     typeEffect();
+    
+    const numberOfComets = 10; // Adjust the number of comets
     for (let i = 0; i < numberOfComets; i++) {
         createComet();
     }
 });
+
+
 
 function createComet() {
     const comet = document.createElement("div");
@@ -25,39 +66,6 @@ function createComet() {
 
     
 
-const roles = [
-    { text: "Java Developer", color: "cyan" },
-    { text: "Web Developer", color: "crimson" },
-    { text: "Problem Solver", color: "lime" }
-];
-let index = 0;
-let charIndex = 0;
-let isDeleting = false;
-const speed = 100;
-const delayBetweenWords = 1000;
-const dynamicText = document.getElementById("dynamic-text");
-
-function typeEffect() {
-    const currentRole = roles[index];
-    if (isDeleting) {
-        charIndex--;
-    } else {
-        charIndex++;
-    }
-
-    dynamicText.textContent = currentRole.substring(0, charIndex);
-
-    if (!isDeleting && charIndex === currentRole.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, delayBetweenWords);
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        index = (index + 1) % roles.length;
-        setTimeout(typeEffect, speed);
-    } else {
-        setTimeout(typeEffect, speed / (isDeleting ? 2 : 1));
-    }
-}
 
 
    
