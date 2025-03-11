@@ -1,6 +1,6 @@
 const roles = [
     { text: "Java Developer", color: "cyan" },
-    { text: "Web Developer", color: "crimson" },
+    { text: "Web Developer", color: "greenyellow" },
     { text: "Problem Solver", color: "lime" }
 ];
 
