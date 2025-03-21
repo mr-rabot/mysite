@@ -7,7 +7,13 @@ body {
 .navbar {
     background-color: cadetblue;
 }
-
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
 .profile-card {
   position: relative;
   width: 280px;
