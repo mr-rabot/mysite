@@ -8,13 +8,15 @@ body {
     background-color: cadetblue;
 }
 .profile-img {
-  width: 220px;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8));
-  position: relative;
-  z-index: 2;
-  animation: moveBorder 2s linear infinite, glow 1.5s linear infinite;
+           
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    animation: glowingShadow 1.5s linear infinite;
+    border-bottom:5px solid tomato;
+    border-radius: 40%;
 }
 
 .profile-img:hover {
@@ -107,23 +109,24 @@ footer {
     100% { box-shadow: 0 0 30px #c8ff00; }
   }
 
-  @keyframes moveBorder {
-    0% {
-      border-color: rgb(251, 255, 0);
-    }
-    25% {
-      border-color: #00ffbf;
-    }
-    50% {
-      border-color: #ff00ea;
-    }
-    75% {
-      border-color: #ff7300;
-    }
-    100% {
-      border-color: #c8ff00;
-    }
+         
+@keyframes glowingShadow {
+  0% {
+      filter: drop-shadow(0 0 10px cyan);
   }
+  25% {
+      filter: drop-shadow(0 0 15px magenta);
+  }
+  50% {
+      filter: drop-shadow(0 0 20px yellow);
+  }
+  75% {
+      filter: drop-shadow(0 0 15px lime);
+  }
+  100% {
+      filter: drop-shadow(0 0 10px cyan);
+  }
+}
   
   @keyframes moveComet {
     0% {
