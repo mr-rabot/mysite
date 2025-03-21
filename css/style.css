@@ -252,8 +252,9 @@ h5{
   50% { opacity: 0; }
 }
 #ttl{
-  color: rgb(245, 70, 1);
+  color: rgb(3, 211, 90);
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
