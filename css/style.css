@@ -5,7 +5,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .navbar {
-    background-color: cadetblue;
+    background-color: rgb(74, 130, 138);
 }
 .profile-card {
   position: relative;
@@ -204,11 +204,6 @@ h5{
 
 }
 
-img{
-  box-shadow: 0px 0px 8px cyan;
-  border-radius: 10px;
-}
-
 @keyframes glowEffect {
   0% { box-shadow: 0 0 30px #0ff; }
   30% { box-shadow: 0 0 15px #0ff; }
@@ -257,7 +252,7 @@ img{
   50% { opacity: 0; }
 }
 #ttl{
-  color: rgb(232, 253, 46);
+  color: rgb(245, 70, 1);
   font-weight: bold;
   font-size: 25px;
 
