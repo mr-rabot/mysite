@@ -8,13 +8,12 @@ body {
     background-color: cadetblue;
 }
 .profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: fill;
-    border: 3px solid #00ffd5;
-    box-shadow: 0px 0px 29px #3cff00;
-    animation: moveBorder 2s linear infinite, glow 1.5s linear infinite;
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8));
+  position: relative;
+  z-index: 2;
 }
 
 .profile-img:hover {
