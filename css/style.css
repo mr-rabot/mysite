@@ -17,7 +17,7 @@ body {
 .profile-card {
   margin: 0 auto;     
   position: relative;
-  width: 250px;
+  width: 280px;
   height: auto;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ body {
     z-index: 2;
     animation: glowingShadow 1.5s linear infinite;
     border-bottom:5px solid tomato;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .profile-img:hover {
