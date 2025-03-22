@@ -25,9 +25,9 @@ body {
 }
 .profile-img {
 
-    display: block;
+    display: flex;
     margin: 0 auto;         
-    width: auto;
+    width: 200px;
     height: 400px;
     object-fit: contain;
     position: relative;
