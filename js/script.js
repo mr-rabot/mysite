@@ -1,4 +1,21 @@
-"use strict";
+
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+      contactForm.addEventListener("submit", (e) => {
+        // Simple sanitizer: strip out HTML tags from each field
+        const sanitize = (str) => str.replace(/<[^>]*>?/gm, "");
+        ["name", "email", "message"].forEach((id) => {
+          const field = document.getElementById(id);
+          if (field) {
+            field.value = sanitize(field.value);
+          }
+        });
+      });
+    }
+  });
+
+
 const roles = [
     { text: "Java Developer", color: "cyan" },
     { text: "Web Developer", color: "#fbff00" },
