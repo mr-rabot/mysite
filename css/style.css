@@ -32,7 +32,7 @@ body {
     object-fit: contain;
     position: relative;
     z-index: 2;
-    animation: glowingShadow 1.8s linear infinite;
+    animation: glowingShadow 1.5s linear infinite;
     border-bottom:5px solid tomato;
     border-radius: 50%;
 }
