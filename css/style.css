@@ -130,19 +130,28 @@ footer {
          
 @keyframes glowingShadow {
   0% {
-      filter: drop-shadow(0 0 3px rgba(134, 17, 230, 0.589));
+      filter: drop-shadow(0 0 5px rgba(134, 17, 230, 0.589));
   }
   25% {
       filter: drop-shadow(0 0 5px magenta);
   }
   50% {
-      filter: drop-shadow(0 0 7px yellow);
+      filter: drop-shadow(0 0 5px yellow);
   }
   75% {
       filter: drop-shadow(0 0 5px lime);
   }
   100% {
-      filter: drop-shadow(0 0 2px rgb(0, 255, 149));
+      filter: drop-shadow(0 0 5px rgb(0, 255, 149));
+  }
+  75% {
+    filter: drop-shadow(0 0 5px lime);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px yellow);
+  }
+  25% {
+    filter: drop-shadow(0 0 5px magenta);
   }
 }
   
