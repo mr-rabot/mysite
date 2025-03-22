@@ -1,3 +1,4 @@
+"use strict";
 const roles = [
     { text: "Java Developer", color: "cyan" },
     { text: "Web Developer", color: "#fbff00" },
