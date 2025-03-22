@@ -17,8 +17,8 @@ body {
 .profile-card {
   margin: 0 auto;     
   position: relative;
-  width: 200px;
-  height: 400px;
+  width: 250px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,8 +27,8 @@ body {
 
     display: flex;
     margin: 0 auto;         
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: auto;
     object-fit: contain;
     position: relative;
     z-index: 2;
