@@ -32,9 +32,9 @@ body {
     object-fit: contain;
     position: relative;
     z-index: 2;
-    animation: glowingShadow 1.5s linear infinite;
+    animation: glowingShadow 1.8s linear infinite;
     border-bottom:5px solid tomato;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 
 .profile-img:hover {
@@ -130,16 +130,16 @@ footer {
          
 @keyframes glowingShadow {
   0% {
-      filter: drop-shadow(0 0 5px rgba(134, 17, 230, 0.589));
+      filter: drop-shadow(0 0 3px rgba(134, 17, 230, 0.589));
   }
   25% {
-      filter: drop-shadow(0 0 8px magenta);
+      filter: drop-shadow(0 0 5px magenta);
   }
   50% {
-      filter: drop-shadow(0 0 9px yellow);
+      filter: drop-shadow(0 0 7px yellow);
   }
   75% {
-      filter: drop-shadow(0 0 8px lime);
+      filter: drop-shadow(0 0 5px lime);
   }
   100% {
       filter: drop-shadow(0 0 4px rgb(0, 255, 149));
