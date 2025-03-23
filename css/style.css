@@ -6,8 +6,6 @@ body {
 }
 .navbar {
     background-color: rgba(0, 255, 234, 0.281);
-    margin: 5%;
-    height: 30px;
 }
 #pcontainer{
   display: flex;
