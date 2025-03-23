@@ -34,7 +34,7 @@ body {
     z-index: 2;
     animation: glowingShadow 1.5s linear infinite;
     border-bottom:5px solid tomato;
-    border-radius: 40%;
+    border-radius: 25%;
 }
 
 .profile-img:hover {
