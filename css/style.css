@@ -5,7 +5,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .navbar {
-    background-color: rgba(234, 0, 255, 0.281);
+    background-color: rgba(0, 255, 234, 0.281);
 }
 #pcontainer{
   display: flex;
